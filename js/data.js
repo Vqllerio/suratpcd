@@ -6,7 +6,7 @@
         id: "alicia",
         name: "Alicia",
         title: "Untuk Picidihh Alicia",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "ALT26",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "🏆",
         awardTitle: "Penguasa MnG",
@@ -24,7 +24,7 @@
         id: "reyes",
         name: "Reyes",
         title: "Untuk Picidihh Reyes",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "SIL99",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "🥷",
         awardTitle: "WOOP, WOOP, WoOOoOP",
@@ -43,7 +43,7 @@
         id: "chelsea",
         name: "Chelsea",
         title: "Untuk Picidihh Chelsea",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "MANCR1",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "👑",
         awardTitle: "Wendah",
@@ -61,7 +61,7 @@
         id: "edward",
         name: "Edward",
         title: "Untuk Picidihh Edward",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "FLR77",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "💐",
         awardTitle: "Pocakable",
@@ -80,7 +80,7 @@
         id: "filbert",
         name: "Filbert",
         title: "Untuk Picidihh Filbert",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "GRCP01",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "⚡",
         awardTitle: "Kowalski",
@@ -100,7 +100,7 @@
         id: "howeld",
         name: "Howeld",
         title: "Untuk Picidihh Howeld",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "TNTS88",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "😮‍💨",
         awardTitle: "Paling TTU Tapi Tuntas",
@@ -120,7 +120,7 @@
         id: "jesal",
         name: "Jesal",
         title: "Untuk Picidihh Jesal",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "VET22",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "🛡️",
         awardTitle: "The Unshakable Veteran",
@@ -138,7 +138,7 @@
         id: "chika",
         name: "Chika",
         title: "Untuk Picidihh Chika",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "SAN00",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "🎭",
         awardTitle: "Drama Queen",
@@ -157,7 +157,7 @@
         id: "lynn",
         name: "Lynn",
         title: "Untuk Picidihh Lynn",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "ILLD3",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "💃🏻",
         awardTitle: "Ratu Joged",
@@ -175,7 +175,7 @@
         id: "karen",
         name: "Karen",
         title: "Untuk Bocah Picidihh",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "JEM55",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "👶🏻",
         awardTitle: "Bocil of Picidihh",
@@ -194,7 +194,7 @@
         id: "keshia",
         name: "Keshia",
         title: "Untuk Bocah Picidihh",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "KIL123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "🚀",
         awardTitle: "Bocil Paling Inisiatif",
@@ -212,7 +212,7 @@
         id: "mario",
         name: "Mario",
         title: "Untuk Bocah Picidihh",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "EXCEL404",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "📊",
         awardTitle: "Penguasa ISU",
@@ -232,7 +232,7 @@
         id: "jujuu",
         name: "Jujuu",
         title: "Untuk Bocah Picidihh",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "MULTI99",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "🌟",
         awardTitle: "The Ultimate Multi-Tasker",
@@ -251,7 +251,7 @@
         id: "jevlin",
         name: "Jevlin",
         title: "Untuk Bocah Picidihh",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "ONTIM00",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "⏰",
         awardTitle: "King of Discipline",
@@ -270,7 +270,7 @@
         id: "vanes",
         name: "Vanes",
         title: "Untuk Bocah Picidihh",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "CALBR32",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "🧠",
         awardTitle: "the WOOP WOOP",
@@ -289,7 +289,7 @@
         id: "vericho",
         name: "Vericho",
         title: "Untuk Bocah Picidihh",
-        code: "PICIDIH123",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
+        code: "CAY77",              // ⬅️ GANTI kode rahasia ini, jangan disebar sembarangan
         accent: "#ff527b",
         awardIcon: "💎",
         awardTitle: "The Unstoppable Carrying",
