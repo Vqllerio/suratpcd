@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Little Love for My People ✨</title>
+  
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Grandstander:wght@600;800&display=swap" rel="stylesheet" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Firebase SDK (v8 compatible with your style) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  
+  <base target="_blank">
+</head>
+<body>
+
+  <div class="bg-decor" style="top: 10%; left: 5%;">🌸</div>
+  <div class="bg-decor" style="top: 20%; right: 8%;">✨</div>
+  <div class="bg-decor" style="bottom: 15%; left: 8%;">🎀</div>
+  <div class="bg-decor" style="bottom: 10%; right: 5%;">💖</div>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="Asset/Sound/Hard_To_Say_Goodbye.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="letterHoverSound" preload="auto">
+    <source src="Asset/Sound/Letter_Hover.MP3" type="audio/mpeg">
+  </audio>
+
+  <!-- ================= GREETING LANDING PAGE ================= -->
+  <div id="greetingScreen">
+    <div class="greeting-content">
+      <div class="greeting-small">✦ a little something ✦</div>
+      <div class="greeting-heart">💌</div>
+
+      <h1>For Picidihh</h1>
+
+      <div class="greeting-note">
+        <p>
+          Haii Picidihh!<br>
+          Ini hanya sedikit sesuatu yang mau saya kasih ke kalian.
+          <br><br>
+          <strong>18 surat, 18 cerita, dan sedikit rasa sayang.</strong>
+        </p>
+      </div>
+
+      <p class="greeting-subtitle">
+        Buka pelan-pelan yaa. Ada surat yang sudah menunggu di dalam. ✨
+      </p>
+
+      <button class="greeting-open" id="greetingOpen">
+        Buka untuk Picidihh 💖
+      </button>
+    </div>
+  </div>
+
+  <div id="mainContent">
+    <div class="container">
+
+      <!-- ================= HUB: 18 ENVELOPES ================= -->
+      <div id="hubView">
+        <div class="hub-header">
+          <h1>💌 18 Surat untuk 18 Orang Istimewa</h1>
+          <p>Cari namamu, klik amplopnya, dan masukkan kode rahasiamu 🔒</p>
+        </div>
+        <div class="hub-grid" id="hubGrid"></div>
+      </div>
+
+      <!-- ================= ENVELOPE SCREEN ================= -->
+      <div id="envelopeScreen">
+        <button class="back-btn" onclick="goBack()">← Kembali ke semua surat</button>
+        <div class="envelope-box" id="envelopeBox" onclick="openEnvelopeAnimation()">
+          <div class="flap"></div>
+          <div class="pocket"></div>
+          <div class="seal" id="sealInitial">💌</div>
+          <div class="letter-preview">
+            <h3 id="previewTitle">For You ❤️</h3>
+            <p>Ada surat spesial untukmu di dalam...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= LETTER ================= -->
+      <div class="letter-container" id="letterContainer">
+
+        <!-- Award Badge (unique per person) -->
+        <div class="card award-card" id="awardCard">
+          <div class="award-label">✦ Official Award ✦</div>
+          <div class="award-icon" id="awardIcon">🏆</div>
+          <div class="award-title" id="awardTitle">Award Title</div>
+          <div class="award-desc" id="awardDesc">Award description</div>
+        </div>
+
+        <!-- Main Letter Card -->
+        <div class="card">
+          <div class="letter-header">
+            <h1 id="letterTitle">Untuk Kamu</h1>
+          </div>
+
+          <div class="letter-body" id="letterBody"></div>
+
+          <div class="skip-area" id="skipArea" style="display:none;">
+            <button class="skip-btn" onclick="skipTyping()">lihat langsung aja ✨</button>
+          </div>
+
+          <div class="letter-footer">
+            <p>Peluk hangat dari,</p>
+            <div class="signature" id="signature" title="...?">Valle</div>
+            <div class="secret-msg" id="secretMsg"></div>
+          </div>
+        </div>
+
+        <!-- Superpower Badges -->
+        <div class="card">
+          <div class="gallery-title">🏆 Divisi Superpower Badges 🏆 </div>
+          <div class="badges-grid">
+            <div class="badge-item"><div class="badge-icon">💪🏻</div><div class="badge-title">Picidihh kuwatt</div></div>
+            <div class="badge-item"><div class="badge-icon">🧠</div><div class="badge-title">Migrainee -Lynn</div></div>
+            <div class="badge-item"><div class="badge-icon">🫩</div><div class="badge-title">Begadang</div></div>
+            <div class="badge-item"><div class="badge-icon">🥰</div><div class="badge-title">Emotional Support</div></div>
+          </div>
+        </div>
+
+        <!-- Memory Polaroid Gallery -->
+        <div class="card">
+          <div class="gallery-title">📸 Cute Memories of Picidihh 📸</div>
+          <div class="polaroid-grid">
+            <div class="polaroid">
+              <img src="Asset/Foto/Photo_PCD1.png" alt="Foto 1">
+            </div>
+            <div class="polaroid">
+              <img src="Asset/Foto/Photo_PCD2.png" alt="Foto 2">
+            </div>
+            <div class="polaroid">
+              <img src="Asset/Foto/Photo_PCD3.png" alt="Foto 3">
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Buttons -->
+        <div class="interactive-btn-area">
+          <button class="love-btn" onclick="spamLove(event)">
+            <span>💖</span> Spam Love & Semangat!
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CODE MODAL ================= -->
+  <div class="modal-overlay" id="codeModal">
+    <div class="modal">
+      <h2 id="modalName">Halo! 🔒</h2>
+      <p class="sub">Surat ini khusus untuk mata yang tepat.<br>Masukkan kode rahasiamu:</p>
+      <input type="text" id="codeInput" placeholder="KODE RAHASIA" autocomplete="off">
+      <div class="err" id="modalErr"></div>
+      <button class="modal-btn" onclick="verifyCode()">Buka Surat 💌</button>
+      <span class="close-link" onclick="closeModal()">bukan aku, kembali</span>
+    </div>
+  </div>
+
+  <!-- Load scripts in order: Firebase -> Data -> App -->
+  <script src="js/firebase-config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
